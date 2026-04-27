@@ -348,7 +348,7 @@ function FoodBubble({
         alt=""
         width={220}
         height={220}
-        className={`object-contain mix-blend-multiply ${imageClass}`}
+        className={`object-contain ${imageClass}`}
       />
     </div>
   );
@@ -429,7 +429,7 @@ function HomeScreen({
                 alt=""
                 width={44}
                 height={44}
-                className="h-[30px] w-[30px] object-cover mix-blend-multiply"
+                className="h-[30px] w-[30px] object-cover"
               />
             </span>
             {category.name}
@@ -473,7 +473,7 @@ function ProductCard({
         event.preventDefault();
         onClick();
       }}
-      className="h-[234px] w-[178px] shrink-0 overflow-hidden rounded-[14px] bg-[#fff0f0] px-[10px] pb-3 text-left md:h-[300px] md:w-full md:px-5 md:pb-5"
+      className="h-[234px] w-[178px] shrink-0 overflow-hidden rounded-[14px] bg-white px-[10px] pb-3 text-left md:h-[300px] md:w-full md:px-5 md:pb-5"
     >
       <div className="flex h-[135px] items-end justify-center md:h-[185px]">
         <Image
@@ -481,7 +481,7 @@ function ProductCard({
           alt={product.cardName}
           width={170}
           height={140}
-          className="max-h-[132px] w-auto object-contain mix-blend-multiply md:max-h-[178px]"
+          className="max-h-[132px] w-auto object-contain md:max-h-[178px]"
         />
       </div>
       <h4 className="mt-2 truncate text-[18px] font-extrabold md:text-[22px]">
@@ -528,7 +528,7 @@ function DetailScreen({
         width={320}
         height={320}
         priority
-        className={`pointer-events-none absolute z-0 object-contain mix-blend-multiply md:hidden ${product.detailImageClass}`}
+        className={`pointer-events-none absolute z-0 object-contain md:hidden ${product.detailImageClass}`}
       />
 
       <div className="relative z-10 mx-auto mt-[18px] max-w-6xl md:grid md:grid-cols-[0.88fr_1.12fr] md:items-center md:gap-10">
@@ -586,7 +586,7 @@ function DetailScreen({
             width={620}
             height={620}
             priority
-            className="max-h-[560px] w-full max-w-[620px] object-contain mix-blend-multiply"
+            className="max-h-[560px] w-full max-w-[620px] object-contain"
           />
         </div>
       </div>
